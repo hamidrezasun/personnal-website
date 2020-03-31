@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "faas20011",
-    "database": "blog",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "password": "root",
+    "storage":".sqlite",
+    "host": "localhost",
+    "dialect": "sqlite"
   }
 }

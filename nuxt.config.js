@@ -17,7 +17,7 @@ module.exports = {
   },
   server: {
     port: 3000, // default: 3000
-    host: 'hamidreza-sun.network' // default: localhost
+    host: 'localhost' // default: localhost
   },
   /*
   ** Customize the progress-bar color
