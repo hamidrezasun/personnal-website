@@ -44,7 +44,10 @@ async function start () {
       attributes: ['title', 'ShortBody'],
       limit:PageLimit,
       offset:(page-1)*PageLimit
-    }).then(posts => res.json(posts));
+    }).then(posts => {
+      //console.log(posts)
+      res.json(posts)
+    });
     return res.status(203)
   })
   // Give nuxt middleware to express

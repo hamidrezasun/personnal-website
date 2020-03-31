@@ -16,10 +16,8 @@
                 <b-card-body>
                     <b-card-text v-text="data.ShortBody"></b-card-text>
                 </b-card-body>
-                <b-card-footer class="h1">
-                    <b-col md="4"><b-icon icon="chat-fill"></b-icon></b-col>
-                    <b-col md="4"></b-col>
-                    <b-col md="4"></b-col>
+                <b-card-footer class="h2">
+                    <b-col md="4"><b-icon icon="chat-fill"></b-icon>5</b-col>
                 </b-card-footer>
             </b-card>
             <no-ssr>
@@ -55,6 +53,7 @@ export default {
                 },
             }).then(({ data }) => {
                 if (data.length) {
+                    console.log(data);
                     this.page += 1;
                     this.list.push(...data);
                     $state.loaded();
